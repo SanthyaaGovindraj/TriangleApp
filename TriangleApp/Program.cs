@@ -38,7 +38,28 @@ namespace TriangleApp
 
         static void Main(string[] args)
         {
-            MenuChoice();
+            TriangleSolver t = new TriangleSolver();
+            int selection;
+            selection = MenuChoice();
+            if (selection != 2)
+            {
+                Console.WriteLine("Please enter the dimensions of the triangle:");
+                string dimensions = Console.ReadLine();
+                int[] sides = Array.ConvertAll(dimensions.Split(','), int.Parse);
+                int a = sides[0];
+                int b = sides[1];
+                int c = sides[2];
+                if (a + b <= c || a + c <= b || b + c <= a)
+                {
+                    Console.WriteLine("It does not form a Triangle!");
+                }
+                else 
+                {
+                    t.Analyze(a, b, c);
+                }
+                
+            }
+             
         }
     }
 }
