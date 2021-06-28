@@ -6,7 +6,6 @@ namespace TriangleAppTest
     public class UnitTest
     {
 
-        TriangleSolver t = new TriangleSolver();
         string triangle;
 
         [Test]
@@ -14,7 +13,7 @@ namespace TriangleAppTest
         {
             int a = 5, b = 5, c = 5;
             triangle = "This is an Equilateral Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a,b,c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a,b,c));
         }
 
         [Test]
@@ -22,7 +21,7 @@ namespace TriangleAppTest
         {
             int a = 10, b = 10, c = 10;
             triangle = "This is an Equilateral Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a, b, c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
         [Test]
@@ -30,7 +29,7 @@ namespace TriangleAppTest
         {
             int a = 5, b = 5, c = 4;
             triangle = "This is an Isoceles Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a, b, c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
         [Test]
@@ -38,7 +37,7 @@ namespace TriangleAppTest
         {
             int a = 10, b = 15, c = 10;
             triangle = "This is an Isoceles Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a, b, c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
         [Test]
@@ -46,7 +45,7 @@ namespace TriangleAppTest
         {
             int a = 15, b = 8, c = 8;
             triangle = "This is an Isoceles Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a, b, c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
         [Test]
@@ -54,7 +53,7 @@ namespace TriangleAppTest
         {
             int a = 5, b = 8, c = 10;
             triangle = "This is an Scalene Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a, b, c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
         [Test]
@@ -62,7 +61,7 @@ namespace TriangleAppTest
         {
             int a = 10, b = 15, c = 20;
             triangle = "This is an Scalene Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a, b, c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
         [Test]
@@ -70,7 +69,7 @@ namespace TriangleAppTest
         {
             int a = 10, b = 20, c = 25;
             triangle = "This is an Scalene Triangle";
-            Assert.AreEqual(triangle, t.Analyze(a, b, c));
+            Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
     }
 }

@@ -4,9 +4,9 @@ using System.Text;
 
 namespace TriangleApp
 {
-    public class TriangleSolver
+    public static class TriangleSolver
     {
-        public string Analyze(int a, int b, int c)
+        public static string Analyze(int a, int b, int c)
         {
             int A = a, B = b, C = c;
             string triangle;

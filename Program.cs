@@ -38,7 +38,6 @@ namespace TriangleApp
 
         static void Main(string[] args)
         {
-            TriangleSolver t = new TriangleSolver();
             int selection;
             selection = MenuChoice();
             if (selection != 2)
@@ -55,7 +54,7 @@ namespace TriangleApp
                 }
                 else 
                 {
-                    t.Analyze(a, b, c);
+                    TriangleSolver.Analyze(a, b, c);
                 }
                 
             }
