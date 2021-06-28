@@ -52,7 +52,7 @@ namespace TriangleAppTest
         public void Scalene_Five_Eight_Ten()
         {
             int a = 5, b = 8, c = 10;
-            triangle = "This is an Scalene Triangle";
+            triangle = "This is a Scalene Triangle";
             Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
@@ -60,7 +60,7 @@ namespace TriangleAppTest
         public void Scalene_Ten_Fifteen_Twenty()
         {
             int a = 10, b = 15, c = 20;
-            triangle = "This is an Scalene Triangle";
+            triangle = "This is a Scalene Triangle";
             Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
 
@@ -68,7 +68,7 @@ namespace TriangleAppTest
         public void Scalene_Ten_Twenty_Twentyfive()
         {
             int a = 10, b = 20, c = 25;
-            triangle = "This is an Scalene Triangle";
+            triangle = "This is a Scalene Triangle";
             Assert.AreEqual(triangle, TriangleSolver.Analyze(a, b, c));
         }
     }

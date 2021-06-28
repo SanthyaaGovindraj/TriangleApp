@@ -10,23 +10,32 @@ namespace TriangleApp
         {
             int A = a, B = b, C = c;
             string triangle;
-            
-            if (A == B && B== C) 
+            if (a + b <= c || a + c <= b || b + c <= a)
             {
-                triangle = "This is an Equilateral Triangle";
+                triangle = "It does not form a Triangle!";
                 Console.WriteLine(triangle);
             }
-            else if (A == B || A == C || B == C)
+            else
             {
-                triangle = "This is an Isoceles Triangle";
-                Console.WriteLine(triangle);
-            }
-            else 
-            {
-                triangle = "This is an Scalene Triangle";
-                Console.WriteLine(triangle);
+                if (A == B && B == C)
+                {
+                    triangle = "This is an Equilateral Triangle";
+                    Console.WriteLine(triangle);
+                }
+                else if (A == B || A == C || B == C)
+                {
+                    triangle = "This is an Isoceles Triangle";
+                    Console.WriteLine(triangle);
+                }
+                else
+                {
+                    triangle = "This is a Scalene Triangle";
+                    Console.WriteLine(triangle);
+                }
+
             }
             return triangle;
+
         }
         
     }
