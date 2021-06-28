@@ -6,32 +6,63 @@ namespace TriangleApp
 {
     public class TriangleSolver
     {
-        public bool Analyze(int a, int b, int c)
+        public string Analyze(int a, int b, int c)
         {
             int A = a, B = b, C = c;
+            string triangle;
             
             if (A == B && B== C) 
             {
-                Console.WriteLine("This is an Equilateral Triangle.");
-                return true;
+                triangle = "This is an Equilateral Triangle";
+                Console.WriteLine(triangle);
             }
             else if (A == B || A == C || B == C)
             {
-              
-                Console.WriteLine("This is an Isoceles Triangle.");
-                return true;
+                triangle = "This is an Isoceles Triangle";
+                Console.WriteLine(triangle);
             }
             else 
             {
-              
-                Console.WriteLine("This is a Scalene Triangle.");
-                return true;
+                triangle = "This is an Scalene Triangle";
+                Console.WriteLine(triangle);
             }
-           
+            return triangle;
         }
-
+        
     }
 }
+
+
+
+
+
+
+
+
+
+//public bool Analyze(int a, int b, int c)
+//{
+//    int A = a, B = b, C = c;
+
+//    if (A == B && B == C)
+//    {
+//        Console.WriteLine("This is an Equilateral Triangle.");
+//        return true;
+//    }
+//    else if (A == B || A == C || B == C)
+//    {
+
+//        Console.WriteLine("This is an Isoceles Triangle.");
+//        return true;
+//    }
+//    else
+//    {
+
+//        Console.WriteLine("This is a Scalene Triangle.");
+//        return true;
+//    }
+
+//}
 
 
 
