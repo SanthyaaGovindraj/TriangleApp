@@ -4,32 +4,34 @@ using System.Text;
 
 namespace TriangleApp
 {
-    class TriangleSolver
+    public class TriangleSolver
     {
-        public static int Analyze(int a, int b, int c)
+        public bool Analyze(int a, int b, int c)
         {
             int A = a, B = b, C = c;
-            string result;
+            
             if (A == B && B== C) 
             {
-                result = "This is an Equilateral Triangle.";
-            
+                Console.WriteLine("This is an Equilateral Triangle.");
+                return true;
             }
             else if (A == B || A == C || B == C)
             {
-                result = "This is an Isoceles Triangle.";
-
+              
+                Console.WriteLine("This is an Isoceles Triangle.");
+                return true;
             }
             else 
             {
-                result = "This is an Scalene Triangle.";
-
+              
+                Console.WriteLine("This is a Scalene Triangle.");
+                return true;
             }
-
-            return Convert.ToInt32(result);
+           
         }
-
-
 
     }
 }
+
+
+
